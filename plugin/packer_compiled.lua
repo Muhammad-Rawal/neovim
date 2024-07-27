@@ -74,11 +74,6 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
-  gruvbox = {
-    loaded = true,
-    path = "/home/rawalrauf/.local/share/nvim/site/pack/packer/start/gruvbox",
-    url = "https://github.com/morhetz/gruvbox"
-  },
   ["lualine.nvim"] = {
     loaded = true,
     path = "/home/rawalrauf/.local/share/nvim/site/pack/packer/start/lualine.nvim",
@@ -118,6 +113,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/rawalrauf/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
+  },
+  ["tokyonight.nvim"] = {
+    loaded = true,
+    path = "/home/rawalrauf/.local/share/nvim/site/pack/packer/start/tokyonight.nvim",
+    url = "https://github.com/folke/tokyonight.nvim"
   }
 }
 
