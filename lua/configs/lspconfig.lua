@@ -23,5 +23,11 @@ end
 -- Lang Servers
 local servers = { 'pyright', 'rust_analyzer', 'tsserver', 'gopls' }
 for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup { on_attach = on_attach }
+  nvim_lsp[lsp].setup {
+    on_attach = on_attach,
+    cmd = lsp == 'gopls' and { '/home/rawalrauf/go/bin/gopls' } or nil
+  }
 end
+
+-- Set log level to debug
+vim.lsp.set_log_level("debug")
